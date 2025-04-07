@@ -1,18 +1,13 @@
 //1. reversed string logic and finding palindrome string
-
 // function reverseFunc(str){
 //     const res = str.split("").reverse().join("").toLowerCase()
 //     console.log("reversed string :", res);
-
 //     if(res === str.toLowerCase() ){
 //         console.log("this is the palindrome word :", res);
 //     }else{
 //         console.log("not palindrome word :", res);
-
 //     }
-
 // }
-
 // reverseFunc("noon")
 
 //2. printing half of string
@@ -21,12 +16,10 @@
 //     const halfStr = str.substring(0 , res)
 //     console.log(halfStr);
 // }
-
 // getStringLength("venugopal")
 
 //3. finding largest number in array
 // const array = [1,23,4,5,67,12,8,938,94,6,23]
-
 // let largestNum = 0
 // for(let index = 0; index < array.length ; index++){
 //     const currentNum = array[index]
@@ -38,19 +31,15 @@
 
 // other way to find largest number in array
 // const array = [1,23,4,5,67,12,8,938,94,6,23]
-
 // const findFunc = (num)=>{
 //     const res = [...num, 22,3343,555,66,7]
 //     console.log(res);
-
 //     return Math.max(...res)
 // }
-
 // console.log(findFunc(array));
 
 // //4. find the largest negative number
 // const array = [-11,-23,-4,-5,-67,-12,-8,-938,-94,-1,-23,-80]
-
 //  let largestNum = -0
 //  for(let index = 0; index < array.length ; index++){
 //    const currentNum = array[index]
@@ -62,16 +51,13 @@
 
 //5. removing duplicates in array
 //  const array = [1,23,4,3,4,4,4,4,4,5,67,12,8,938,94,6,2,3,1,2,33]
-
 // const removeDuplicatesFunc = (paramArray)=>{
 //   return [...new Set(paramArray)]
 // }
-
 // console.log(removeDuplicatesFunc(array));
 
 // other method to find duplicates in array
 // const array = [1,23,4,3,4,4,4,4,4,5,67,12,8,938,94,6,2,3,1,2,33]
-
 // const removeDuplicatesFunc = (arr)=>{
 //   return arr.filter((item, index)=> arr.indexOf(item) === index)
 // }
@@ -93,7 +79,6 @@
 //   }
 
 // }
-
 // checkAnagramsFunc("dare" , "dear")
 
 //7. Count the number of vowels in a string.
@@ -101,28 +86,22 @@
 //   let vowels = "aeiouAEIOU"
 //   return str.split("").filter((char)=> vowels.includes(char)).length
 // }
-
 // console.log((checkVowels("aeioud")));
 
 //8. Find the second largest number in an array.
 // const array = [1, 23, 4, 5, 67, 12, 8, 938, 94, 6, 23];
-
 // function secondLargest(arr) {
-
 // const sortedArr =  [...new Set(arr)].sort((a, b)=> b - a )
 // return sortedArr[1] || null
 // }
-
 // console.log(secondLargest(array));
 
 //9. Generate a random number within a given range.
 // const generateRandomNum = (minPara, maxPara) => {
 //     const min = Math.ceil(minPara);
 //     const max = Math.floor(maxPara);
-
 //     return Math.floor(Math.random() * (max - min + 1)) + min;
 // };
-
 // console.log(generateRandomNum(100000, 999999));
 
 // // hardcode json data
@@ -156,13 +135,11 @@
 //   );
 //   return searchResults;
 // };
-
 // console.log(searchFunction("ba"));
 // console.log(searchFunction("bag"));
 // console.log(searchFunction("shi"));
 
 //11. finding prime number
-
 // function isPrime(n) {
 //   if (n < 2) return false; // 0 and 1 are not prime
 //   if (n === 2 || n === 3) return true; // 2 and 3 are prime
@@ -173,7 +150,6 @@
 //   }
 //   return true;
 // }
-
 // // Example usage:
 // console.log(isPrime(6));
 
@@ -186,18 +162,14 @@
 //     num % 2 === 0 ? evenArray.push(num) : oddNum.push(num)
 //   }
 // };
-
 // findEvenNumber(arr)
 // console.log(evenArray.sort((a,b)=> a +b));
 // console.log(oddNum.sort((a,b)=> a +b));
 // console.log(oddNum.length + evenArray.length);
 
 //13. converting the first letter of each word to uppercase in string
-
 // const string = "coding is easy when you able to solve the bugs";
-
 // const res = string.split(" ").map((word)=> word.charAt(0).toUpperCase() + word.slice(1)).join(" ")
-
 // console.log(res);
 
 // 14. reverse the array without using reverse() method
@@ -216,7 +188,6 @@
 // const doubleNumFunc =(paramArray)=>{
 //     return paramArray.flatMap((num)=> [num , num])
 //  }
-
 //  console.log(doubleNumFunc(arr))
 
 // 16. find the factors of a number
@@ -229,10 +200,8 @@
 //         factors.push(index);
 //     }
 // }
-
 //   return factors;
 // };
-
 // console.log(findFactors(7));
 // counter function
 
@@ -258,40 +227,33 @@
 
 // //18. changing first letter of word into capital in array of words
 // const arr = ["venu", "gopal", "varun", "tarun", "kiran"];
-
 // const func = (params) => {
 //   return params.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
 // };
-
 // console.log(func(arr));
 
 //19. changing letter in name with string methods
-
 // const myName = "venugopal"
-
 // // console.log(myName);
 // // const res = myName.replace("u" , "i")
 
 //20. changing letter in name with array methods
-
 // const conArr = myName.split("")
 // console.log(conArr);
 //   conArr.splice(3,1, "i")
 // const res = conArr.join("")
 // console.log(res);
 
-//21.  finding sum of all numbers in given array
+//21.finding sum of all numbers in given array
 // const arr = [91,45,152,87,814,84,8]
 // const res = arr.reduce((acc , item )=> acc + item , 0)
 // console.log(res);
 
 // 22. iterating over an array printing each element using forEach() and for() loop
-
 // const arr = ["venu" , "varun" ,"siddarth" , "kowshik" , "kiran", "gopal"]
 //  arr.forEach((item)=>{
 //   console.log(item);
 // })
-
 // for(let index = 0 ; index  < arr.length ; index++){
 //   console.log(arr[index]);
 // }
@@ -301,3 +263,13 @@
 // const res1 = arr.filter((item)=> item > 50)
 // const res  = Math.min(...res1)
 // console.log( " smallest number greater than 50 :" ,res);
+
+//24. find the negative number using some()
+// const arr = [2,3,4,5,6,77,8,-9]
+// const res = arr.some((item)=> item < 2)
+// console.log(res);
+
+// 25. checking positive number using every()
+// const arr = [2,3,4,5,6,77,8,9]
+// const res = arr.every((item)=> item > 0)
+// console.log(res);
