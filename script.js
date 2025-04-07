@@ -273,3 +273,12 @@
 // const arr = [2,3,4,5,6,77,8,9]
 // const res = arr.every((item)=> item > 0)
 // console.log(res);
+
+//26. filter only the numbers from the array using filter()
+// const newArr = ["e", "", "j", "2", 5, 8, "f", "d", true, false];
+// const r = newArr.filter((item) => typeof item === "string");
+// console.log(r);
+// if (r.length < 0) return;
+// if (r.length > 0) {
+//   console.log(r.length, "numbers are found in array");
+// }
