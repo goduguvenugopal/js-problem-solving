@@ -282,3 +282,49 @@
 // if (r.length > 0) {
 //   console.log(r.length, "numbers are found in array");
 // }
+
+
+//27. basic count increment using class and setinterval
+// class Person {
+//   static count = 0; // Static property shared across all instances
+//   constructor() {
+//     Person.count += 1;
+//   }
+//   greet() {
+//     console.log("Count increment: " + Person.count);
+//   }
+// }
+// setInterval(() => {
+//   const person1 = new Person();
+//   person1.greet(); // Count increment: 1
+// }, 1000);
+
+
+//28. Primitive vs Non-Primitive in JavaScript
+// const arr = ["gh", { trg: "vf" }];
+// if (Array.isArray(arr)) {
+//   console.log("this is a array");
+// } else {
+//   console.log("this is not array");
+// }
+// const kk = [...arr, ...arr];
+// kk.pop();
+// kk.push({ venu: "bvdgy", dfd: "Fd" });
+// console.log(arr);
+// console.log(kk);
+
+// 1. Non-Primitive Data Types – Copied by Reference
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+// arr2.push(4);
+// console.log(arr1); // [1, 2, 3, 4]
+// console.log(arr2); // [1, 2, 3, 4]
+// Both arr1 and arr2 point to the same memory reference.
+
+// 2. Primitive Data Types – Copied by Value
+// let x = 10;
+// let y = x;
+// y = 20;
+// console.log(x); // 10
+// console.log(y); // 20
+// x and y are separate. Changing one doesn’t affect the other.
