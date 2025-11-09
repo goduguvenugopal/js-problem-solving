@@ -283,7 +283,6 @@
 //   console.log(r.length, "numbers are found in array");
 // }
 
-
 //27. basic count increment using class and setinterval
 // class Person {
 //   static count = 0; // Static property shared across all instances
@@ -299,7 +298,6 @@
 //   person1.greet(); // Count increment: 1
 // }, 1000);
 
-
 //28. Primitive vs Non-Primitive in JavaScript
 // const arr = ["gh", { trg: "vf" }];
 // if (Array.isArray(arr)) {
@@ -313,7 +311,7 @@
 // console.log(arr);
 // console.log(kk);
 
-// 1. Non-Primitive Data Types – Copied by Reference
+// 29. Non-Primitive Data Types – Copied by Reference
 // let arr1 = [1, 2, 3];
 // let arr2 = arr1;
 // arr2.push(4);
@@ -321,10 +319,71 @@
 // console.log(arr2); // [1, 2, 3, 4]
 // Both arr1 and arr2 point to the same memory reference.
 
-// 2. Primitive Data Types – Copied by Value
+// 30. Primitive Data Types – Copied by Value
 // let x = 10;
 // let y = x;
 // y = 20;
 // console.log(x); // 10
 // console.log(y); // 20
 // x and y are separate. Changing one doesn’t affect the other.
+
+// 31. Find factorial of a number.
+// Input: 5 → Output: 120
+
+// function factorialFn(n) {
+//   let results = 1;
+
+//   for (let i = 1; i <= n; i++) {
+//     results *= i;
+//   }
+
+//   if (results <= Number.MAX_SAFE_INTEGER) {
+//     console.log("It is within safe integer value");
+//   } else {
+//     console.log("Crossed safe integer value use BigInt data type ");
+//   }
+
+//   return results;
+// }
+
+// console.log(factorialFn(5));
+
+// 32. Sum of array elements
+// Input: [2, 4, 6] → Output: 12
+
+// const arr = [2, 4, 6];
+
+// let sum = 0;
+
+// for (let index = 0; index < arr.length; index++) {
+//   sum += arr[index];
+// }
+
+// console.log(sum);
+ 
+
+// Find the second largest element in an array.
+// Input: [10, 40, 30, 20] → Output: 30
+
+// 🟡 Intermediate Level
+
+// Remove duplicates from an array.
+// Input: [1, 2, 2, 3, 4, 4] → Output: [1, 2, 3, 4]
+
+// Find missing number in a sequence (1 to n).
+// Input: [1, 2, 4, 5] → Output: 3
+
+// Find the frequency of each element in an array.
+// Input: [1, 2, 2, 3, 3, 3] → Output: {1:1, 2:2, 3:3}
+
+// Find intersection of two arrays.
+// Input: [1, 2, 3], [2, 3, 4] → Output: [2, 3]
+
+// Flatten a nested array.
+// Input: [1, [2, [3, 4], 5]] → Output: [1, 2, 3, 4, 5]
+
+// Move all zeros to end.
+// Input: [0, 1, 0, 3, 12] → Output: [1, 3, 12, 0, 0]
+
+// Find first non-repeating character in a string.
+// Input: "aabbcde" → Output: "c"
