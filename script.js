@@ -360,10 +360,27 @@
 // }
 
 // console.log(sum);
- 
 
-// Find the second largest element in an array.
+//32.Find the second largest element in an array.
 // Input: [10, 40, 30, 20] → Output: 30
+
+// const arrOfSum = [1, 2, 3, 10, 15, 24, 31, 45, 60];
+
+// let firstLgNum = -Infinity;
+// let secondLgNum = -Infinity;
+
+// for (let index = 0; index < arrOfSum.length; index++) {
+//   const element = arrOfSum[index];
+//   if (element > firstLgNum) {
+//     secondLgNum = firstLgNum
+//     firstLgNum = element;
+//   } else if (element > firstLgNum && secondLgNum < firstLgNum) {
+//     secondLgNum = element;
+//   }
+// }
+
+// console.log(firstLgNum);
+// console.log(secondLgNum);
 
 // 🟡 Intermediate Level
 
