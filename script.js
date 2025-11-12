@@ -40,7 +40,7 @@
 
 // //4. find the largest negative number
 // const array = [-11,-23,-4,-5,-67,-12,-8,-938,-94,-1,-23,-80]
-//  let largestNum = -0
+//  let largestNum = -Infinity
 //  for(let index = 0; index < array.length ; index++){
 //    const currentNum = array[index]
 //      if(currentNum > largestNum){
@@ -175,15 +175,15 @@
 // 14. reverse the array without using reverse() method
 // const arr = [1,2,3,4,5,6,7,8,9,10]
 // const reverseFunc = (paramArray)=>{
-//   let res = [1,2,3]
+//   let res = []
 //    paramArray.forEach(element => {
-//    res.unshift(element * 2)
+//    res.unshift(element)
 //   });
 //   return res
 // }
 // console.log(reverseFunc(arr))
 
-//15. double each number in array using Map() method
+//15. double each number in array using flatmap() method
 // const arr = [1,2,3,4,5,6,7,8,9,10]
 // const doubleNumFunc =(paramArray)=>{
 //     return paramArray.flatMap((num)=> [num , num])
@@ -194,8 +194,7 @@
 // const findFactors = (num) => {
 //   const factors = [];
 //   for (let index = 1; index <= num; index++) {
-//     console.log("venu", index);
-
+// 
 //     if (num % index === 0) {
 //         factors.push(index);
 //     }
@@ -203,7 +202,7 @@
 //   return factors;
 // };
 // console.log(findFactors(7));
-// counter function
+ 
 
 // 17. promise simulation logic
 // const res = new Promise((resolved, rejected) => {
@@ -361,7 +360,7 @@
 
 // console.log(sum);
 
-//32.Find the second largest element in an array.
+//33.Find the second largest element in an array.
 // Input: [10, 40, 30, 20] → Output: 30
 
 // const arrOfSum = [1, 2, 3, 10, 15, 24, 31, 45, 60];
@@ -382,12 +381,8 @@
 // console.log(firstLgNum);
 // console.log(secondLgNum);
 
-// 🟡 Intermediate Level
 
-// Remove duplicates from an array.
-// Input: [1, 2, 2, 3, 4, 4] → Output: [1, 2, 3, 4]
-
-// Find missing number in a sequence (1 to n).
+// 34.Find missing number in a sequence (1 to n).
 // Input: [1, 2, 4, 5] → Output: 3
 
 // Find the frequency of each element in an array.
@@ -404,3 +399,5 @@
 
 // Find first non-repeating character in a string.
 // Input: "aabbcde" → Output: "c"
+
+ 
