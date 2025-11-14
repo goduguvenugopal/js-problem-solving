@@ -194,7 +194,7 @@
 // const findFactors = (num) => {
 //   const factors = [];
 //   for (let index = 1; index <= num; index++) {
-// 
+//
 //     if (num % index === 0) {
 //         factors.push(index);
 //     }
@@ -202,7 +202,6 @@
 //   return factors;
 // };
 // console.log(findFactors(7));
- 
 
 // 17. promise simulation logic
 // const res = new Promise((resolved, rejected) => {
@@ -381,12 +380,38 @@
 // console.log(firstLgNum);
 // console.log(secondLgNum);
 
+// 34.Find missing numbers in a sequence of numbers.
+// const sequence = [1, 2, 5, 6, 7, 8, 9, 10, 11,11, 13, 14, 16, 17, 19];
 
-// 34.Find missing number in a sequence (1 to n).
-// Input: [1, 2, 4, 5] → Output: 3
+// function findMissingNumbers(arr) {
+//   const last = sequence[sequence.length - 1];
+//   const arrSet = new Set(sequence);
+// //  "Using Set reduces time complexity because Set operations like .has() work in O(1) due to the internal hash table structure.
 
-// Find the frequency of each element in an array.
+//   for (let index = 1; index <= last; index++) {
+//     if (!arrSet.has(index)) {
+//       console.log(index);
+//     }
+//   }
+// }
+
+// findMissingNumbers(sequence);
+
+//35. Find the frequency of each element in an array.
 // Input: [1, 2, 2, 3, 3, 3] → Output: {1:1, 2:2, 3:3}
+
+// const arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6, 6, 6];
+
+// function findFreq(arr) {
+//   const freq = {};
+//   arr.forEach((element) => {
+//     freq[element] = (freq[element] || 0) + 1;
+//   });
+
+//   console.log(freq);
+// }
+
+// findFreq(arr);
 
 // Find intersection of two arrays.
 // Input: [1, 2, 3], [2, 3, 4] → Output: [2, 3]
@@ -399,5 +424,3 @@
 
 // Find first non-repeating character in a string.
 // Input: "aabbcde" → Output: "c"
-
- 
