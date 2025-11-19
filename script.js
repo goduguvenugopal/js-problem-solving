@@ -413,14 +413,67 @@
 
 // findFreq(arr);
 
-// Find intersection of two arrays.
-// Input: [1, 2, 3], [2, 3, 4] → Output: [2, 3]
+// 36.Move all zeros to end.
+// Input: [0, 1, 0, 3, 12] → Output: [1, 3, 12, 0, 0]
+// const arr = [0, 1, 0, 3, 12];
 
-// Flatten a nested array.
+// let newArr = [];
+
+// let zeros = 0;
+
+// for (const element of arr) {
+//   if (element === 0) {
+//     zeros++;
+//   } else {
+//     newArr.push(element);
+//   }
+// }
+
+// while (zeros--) {
+//   newArr.push(0);
+// }
+
+// console.log(newArr);
+
+// other modern solution
+// const nonZeroArr = arr.filter((i) => i !== 0);
+// const zerosArr = arr.filter((i) => i !== 0);
+// const newFilterArr = [...nonZeroArr, ...zerosArr];
+
+// 37. Find intersection of two arrays.
+// Input: [1,2,9,3,6,11,5], [2,3,4,6,7,9,8,5] → Output: [ 2, 9, 3, 6, 5 ]
+
+// const arr1 = [1,2,9,3,6,11,5]
+// const arr2 = [2,3,4,6,7,9,8,5]
+
+// const res = arr1.filter((i) => arr2.includes(i))
+// console.log(res);
+
+//38. Flatten a nested array.
 // Input: [1, [2, [3, 4], 5]] → Output: [1, 2, 3, 4, 5]
 
-// Move all zeros to end.
-// Input: [0, 1, 0, 3, 12] → Output: [1, 3, 12, 0, 0]
+// const arr = [1, [2, [3, 4], 5]];
 
+// const r = arr.flat(Infinity);
+// console.log(r);
+
+// other way
+
+// function flatArrFunction(arr) {
+//   let results = [];
+//   for (const item of arr) {
+//     if (Array.isArray(item)) {
+//       results.push(...flatArrFunction(item));
+//     } else {
+//       results.push(item);
+//     }
+//   }
+ 
+//   return results
+// }
+
+// const res = flatArrFunction(arr);
+// console.log(res);
+  
 // Find first non-repeating character in a string.
 // Input: "aabbcde" → Output: "c"
