@@ -449,7 +449,7 @@
 // const res = arr1.filter((i) => arr2.includes(i))
 // console.log(res);
 
-//38. Flatten a nested array.
+//38.Flatten a nested array.
 // Input: [1, [2, [3, 4], 5]] → Output: [1, 2, 3, 4, 5]
 
 // const arr = [1, [2, [3, 4], 5]];
@@ -460,6 +460,7 @@
 // other way
 
 // function flatArrFunction(arr) {
+
 //   let results = [];
 //   for (const item of arr) {
 //     if (Array.isArray(item)) {
@@ -468,12 +469,24 @@
 //       results.push(item);
 //     }
 //   }
- 
+
 //   return results
 // }
 
 // const res = flatArrFunction(arr);
 // console.log(res);
-  
-// Find first non-repeating character in a string.
+
+// 39.Find first non-repeating character in a string.
 // Input: "aabbcde" → Output: "c"
+
+// const inputText = "aabbcde";
+
+// function findNonRepeatingText(text) {
+//   for (const char of text) {
+//     if (text.indexOf(char) === text.lastIndexOf(char)) {
+//       return char;
+//     } 
+//   }
+// }
+
+// console.log(findNonRepeatingText(inputText));
