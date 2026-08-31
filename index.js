@@ -1,3 +1,6 @@
+ import "./first.js"
+ 
+
 //1. reversed string logic and finding palindrome string
 // function reverseFunc(str){
 //     const res = str.split("").reverse().join("").toLowerCase()
@@ -173,7 +176,7 @@
 // console.log(res);
 
 // 14. reverse the array without using reverse() method
-// const arr = [1,2,3,4,5,6,7,8,9,10]
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const reverseFunc = (paramArray)=>{
 //   let res = []
 //    paramArray.forEach(element => {
@@ -182,6 +185,19 @@
 //   return res
 // }
 // console.log(reverseFunc(arr))
+
+// other way to reverse array
+// function reverseFunc1(arr) {
+//   let results = [];
+
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     const ele = arr[i];
+//     results.push(ele);
+//   }
+//   return results;
+// }
+
+// console.log(reverseFunc1(arr));
 
 //15. double each number in array using flatmap() method
 // const arr = [1,2,3,4,5,6,7,8,9,10]
@@ -485,8 +501,19 @@
 //   for (const char of text) {
 //     if (text.indexOf(char) === text.lastIndexOf(char)) {
 //       return char;
-//     } 
+//     }
 //   }
 // }
 
 // console.log(findNonRepeatingText(inputText));
+
+// 40. Count the number of elements for each data type in the original array
+// const newArr = ["e", "", "j", "2", 5, 8, "f", "d", true, false];
+
+// let typesObj = {};
+// for (let ele of newArr) {
+//   const typeEle = typeof ele;
+//   typesObj[typeEle] = (typesObj[typeEle] || 0) + 1;
+// }
+
+// console.log(typesObj);
