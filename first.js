@@ -1,14 +1,34 @@
-function printFactors(num) {
-  let factors = [];
+const fs = require("fs/promises");
 
-  for (let i = 1; i <= num; i++) {
-    if (num % i === 0) {
-      factors.push(i);
-    }
+async function fetchExpenses() {
+  try {
+    const text = await fs.readFile("./project_expenses.json", "utf-8");
+
+    const data = JSON.parse(text);
+
+    return data;
+  } catch (error) {
+    console.error(error);
   }
-  return factors
 }
 
-const results = printFactors(40)
+const sumEachExpenses = async () => {
+  const res = await fetchExpenses();
 
-console.log(results);
+  const sumex = res.reduce((acc, item) => {
+    acc[item.project_code] =
+      (acc[item.project_code] || 0) + Number(item.amount);
+
+    return acc;
+  }, {});
+
+  return sumex;
+};
+
+async function main() {
+  const result = await sumEachExpenses();
+
+  console.log(result);
+}
+
+main();
