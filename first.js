@@ -49,4 +49,4 @@ function safeFactorial(n) {
   return result;
 }
 
-console.log(safeFactorial(100000)); // Works without crashing! (Prints a 456,574 digit number)
+console.log(safeFactorial(100000)); // Works without crashing! (Prints a 456,574 digit number)  
