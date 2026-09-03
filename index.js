@@ -1,6 +1,4 @@
- import "./first.js"
  
-
 //1. reversed string logic and finding palindrome string
 // function reverseFunc(str){
 //     const res = str.split("").reverse().join("").toLowerCase()
