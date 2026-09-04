@@ -33,7 +33,7 @@
 
 // main();
 
-//2 . print factorials  
+//2 . print factorials
 
 // function printFactorial(n) {
 //   return n <= 1 ? 1 : n * printFactorial(n - 1);
@@ -41,12 +41,38 @@
 
 // console.log(printFactorial(512345));
 
-function safeFactorial(n) {
-  let result = 1n; // Using BigInt (denoted by 'n')
-  for (let i = 2n; i <= BigInt(n); i++) {
-    result *= i;
-  }
-  return result;
-}
+// function safeFactorial(n) {
+//   let result = 1n; // Using BigInt (denoted by 'n')
+//   for (let i = 2n; i <= BigInt(n); i++) {
+//     result *= i;
+//   }
+//   return result;
+// }
 
-console.log(safeFactorial(100000)); // Works without crashing! (Prints a 456,574 digit number)  
+// console.log(safeFactorial(100000)); // Works without crashing! (Prints a 456,574 digit number)
+ 
+
+// 3. Print Fibonacci
+
+// function Fibonacci(num) {
+//   let firstNum = 0;
+//   let secondNum = 1;
+//   let arr = [];
+
+//   arr.push(firstNum);
+
+//   for (let i = 1; i <= num; i++) {
+//     arr.push(secondNum);
+
+//     const nextTime = firstNum + secondNum
+
+//     firstNum = secondNum
+//     secondNum = nextTime
+   
+//   }
+
+//   return arr; 
+// }
+
+// const res = Fibonacci(100);
+// console.log(res);
