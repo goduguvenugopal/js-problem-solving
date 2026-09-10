@@ -50,7 +50,6 @@
 // }
 
 // console.log(safeFactorial(100000)); // Works without crashing! (Prints a 456,574 digit number)
- 
 
 // 3. Print Fibonacci
 
@@ -68,11 +67,36 @@
 
 //     firstNum = secondNum
 //     secondNum = nextTime
-   
+
 //   }
 
-//   return arr; 
+//   return arr;
+// }
+ 
+// const res = Fibonacci(100);
+// console.log(res);
+
+// 3.find the missing number
+// function findTheMissingNumber(numArr) {
+//   let missedNums = [];
+//   let count = 0;
+
+//   for (let i = 0; i < numArr.length; i++) {
+//     console.log(i, count);
+
+//     while (numArr[i] !== count) {
+//       missedNums.push(count);
+//       count++;
+//     }
+
+//     count++;
+//   }
+
+//   return missedNums;
 // }
 
-// const res = Fibonacci(100);
+// const numArr = [0, 1, 2, 3, 5, 6, 8];
+
+// const res = findTheMissingNumber(numArr);
+
 // console.log(res);
