@@ -72,31 +72,44 @@
 
 //   return arr;
 // }
- 
+
 // const res = Fibonacci(100);
 // console.log(res);
 
 // 3.find the missing number
+
 // function findTheMissingNumber(numArr) {
 //   let missedNums = [];
 //   let count = 0;
-
 //   for (let i = 0; i < numArr.length; i++) {
-//     console.log(i, count);
-
-//     while (numArr[i] !== count) {
+//     if (numArr[i] !== count) {
 //       missedNums.push(count);
 //       count++;
 //     }
-
 //     count++;
 //   }
-
 //   return missedNums;
 // }
 
-// const numArr = [0, 1, 2, 3, 5, 6, 8];
-
+// const numArr = [0, 1, 3, 4, 6];
 // const res = findTheMissingNumber(numArr);
-
 // console.log(res);
+
+// 4. find the single missing number
+
+// // const numArr = [0, 1, 2, 3, 5];
+
+// // const findSingleMissingNum = (numArr) => {
+// //   const lengthOfArr = numArr.length;
+
+// //   const sumOfArray = (lengthOfArr * (lengthOfArr + 1)) / 2;
+
+// //   let actualArraySum = 0;
+
+// //   for (let ele in numArr) {
+// //     actualArraySum += ele;
+// //   }
+// //   return sumOfArray - actualArraySum;
+// // };
+
+// console.log(findSingleMissingNum(numArr));
