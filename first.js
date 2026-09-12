@@ -97,19 +97,39 @@
 
 // 4. find the single missing number
 
-// // const numArr = [0, 1, 2, 3, 5];
+// const numArr = [0, 1, 2, 3, 5];
 
-// // const findSingleMissingNum = (numArr) => {
-// //   const lengthOfArr = numArr.length;
+// const findSingleMissingNum = (numArr) => {
+//   const lengthOfArr = numArr.length;
+//   console.log(lengthOfArr);
 
-// //   const sumOfArray = (lengthOfArr * (lengthOfArr + 1)) / 2;
+//   const sumOfArray = (lengthOfArr * (lengthOfArr + 1)) / 2;
+// console.log(sumOfArray);
 
-// //   let actualArraySum = 0;
+//   let actualArraySum = 0;
 
-// //   for (let ele in numArr) {
-// //     actualArraySum += ele;
-// //   }
-// //   return sumOfArray - actualArraySum;
-// // };
+//   for (let ele in numArr) {
+//     actualArraySum += ele;
+//   }
+//   return sumOfArray - actualArraySum;
+// };
 
 // console.log(findSingleMissingNum(numArr));
+
+
+//  function findMissing(arr) {
+//     const maxNum = Math.max(...arr);
+//     let missing = [];
+
+//     for (let i = 0; i <= maxNum; i++) {
+
+//         if (!arr.includes(i)) {
+//             missing.push(i);
+//         }
+
+//     }
+
+//     return missing;
+// }
+
+// console.log(findMissing([6, 12, 3, 4, 0, 8, 10, 1, 5, 2]));
