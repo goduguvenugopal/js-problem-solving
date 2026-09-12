@@ -116,7 +116,6 @@
 
 // console.log(findSingleMissingNum(numArr));
 
-
 //  function findMissing(arr) {
 //     const maxNum = Math.max(...arr);
 //     let missing = [];
@@ -133,3 +132,18 @@
 // }
 
 // console.log(findMissing([6, 12, 3, 4, 0, 8, 10, 1, 5, 2]));
+
+// // 5. count the digits of number
+// function countTheDigitsOfNum(num) {
+//   num = Math.abs(num);
+//   let numDigits = 1;
+//   while (num > numDigits) {
+//     num = Math.floor(num / 10);
+
+//     numDigits += 1;
+//   }
+
+//   return `length of the digits : ${numDigits} `
+// }
+
+// console.log(countTheDigitsOfNum(-26545));
