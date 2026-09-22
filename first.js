@@ -161,3 +161,30 @@
 // }
 
 // console.log(isPalindromeNum(input));
+
+// check palindrome number with while loop
+
+// Check palindrome number with while loop
+
+// const input = 3003;
+
+// function isPalindromeNum(num) {
+//   const originalNum = num;
+//   let revNum = 0; 300 ;
+
+//   while (num > 0) {
+//     let remainder = num % 10;
+  
+//     revNum = 10 * revNum + remainder;
+
+//     num = Math.floor(num / 10);
+//   }
+
+//   if (revNum === originalNum) {
+//     return "This is a Palindrome Number";
+//   }
+
+//   return "This is not a Palindrome Number";
+// }
+
+// console.log(isPalindromeNum(input));
