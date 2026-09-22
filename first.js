@@ -147,3 +147,17 @@
 // }
 
 // console.log(countTheDigitsOfNum(-26545));
+
+// check palindrome of number
+
+// const input = 3003;
+
+// function isPalindromeNum(num) {
+//   const strRes = String(num);
+//   let revStr = strRes.split("").reverse().join("");
+//   let revNum = Number(revStr);
+//   if (revNum === num) return "This is the palindrome";
+//   return "This is not palindrome";
+// }
+
+// console.log(isPalindromeNum(input));
