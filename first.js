@@ -174,7 +174,7 @@
 
 //   while (num > 0) {
 //     let remainder = num % 10;
-  
+
 //     revNum = 10 * revNum + remainder;
 
 //     num = Math.floor(num / 10);
@@ -188,3 +188,24 @@
 // }
 
 // console.log(isPalindromeNum(input));
+
+// Palindrome checking with two pointers
+// const input = "noon";
+
+// function check_Palindrome(input) {
+//   let first = 0;
+//   let last = input.length - 1;
+
+//   while (first < last) {
+//     if (input[first] !== input[last]) {
+//       return   `This is the Palindrom ${input}`
+//     }
+
+//     first++;
+//     last--;
+//   }
+
+//   return  `This is the Palindrom ${input}`;
+// }
+
+// console.log(check_Palindrome(input));
