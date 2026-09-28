@@ -209,3 +209,87 @@
 // }
 
 // console.log(check_Palindrome(input));
+
+// give in reverse at specific character in word and combine with rest word
+
+
+// "Move the specified character to the end of the word."
+
+// const input = "hyderabad";
+
+// const place = "a";
+
+// function MoveLetters(input, place) {
+//   let arr = [];
+//   let restWord = []
+//   for (let i = 0; i <= input.length - 1; i++) {
+//     if (input[i] !== place) {
+//         arr.push(input[i]);
+//         continue
+//     }  else{
+//         restWord.push(input[i])
+//     }
+//   }
+
+//   return [...arr, ...restWord].join("")
+// }
+
+// console.log(MoveLetters(input, place));
+
+
+
+// Reverse the word starting from a specific character and combine it with the remaining part."
+
+// const input = "hyderabad";
+// const place = "a";
+
+// function reverseWord(input, place) {
+//   const index = input.indexOf(place);
+
+//   if (index === -1) return input;
+
+//   const before = input.slice(0, index);
+//   const target = input.slice(index);
+
+//   return before + target.split("").reverse().join("");
+// }
+
+// console.log(reverseWord(input, place));
+
+// without built-in functions like indexOf(), slice(), split(), reverse(), join(), then you need to manually find the character and build the result.
+
+// const input = "hyderabad";
+// const place = "a";
+
+// function reverseWord(input, place) {
+//   let index = -1;
+
+//   // Find the position of place
+//   for (let i = 0; i < input.length; i++) {
+//     if (input[i] === place) {
+//       index = i;
+//       break;
+//     }
+//   }
+
+//   // place not found
+//   if (index === -1) {
+//     return input;
+//   }
+
+//   let result = "";
+
+//   // Add characters before place
+//   for (let i = 0; i < index; i++) {
+//     result += input[i];
+//   }
+
+//   // Add characters from place in reverse order
+//   for (let i = input.length - 1; i >= index; i--) {
+//     result += input[i];
+//   }
+
+//   return result;
+// }
+
+// console.log(reverseWord(input, place));
