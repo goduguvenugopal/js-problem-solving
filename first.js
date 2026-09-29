@@ -290,4 +290,28 @@
 // }
 
 // console.log(reverseWord(input, targetChar));
+ 
+// Return vowels and consonants,
 
+// const str = "my name is venu gopal";
+// const vowels = ["a", "e", "i", "o", "u"];
+
+// function separateLetters(str, vowels) {
+//   let v = [];
+//   let c = [];
+
+//   for (let char of str) {
+//     if (vowels.includes(char)) {
+//       v.push(char);
+//     } else if (char !== " ") {
+//       c.push(char);
+//     }
+//   }
+
+//   return {
+//     vowels: v,
+//     consonants: c
+//   };
+// }
+
+// console.log(separateLetters(str, vowels));
