@@ -212,7 +212,6 @@
 
 // give in reverse at specific character in word and combine with rest word
 
-
 // "Move the specified character to the end of the word."
 
 // const input = "hyderabad";
@@ -236,8 +235,6 @@
 
 // console.log(MoveLetters(input, place));
 
-
-
 // Reverse the word starting from a specific character and combine it with the remaining part."
 
 // const input = "hyderabad";
@@ -257,39 +254,40 @@
 // console.log(reverseWord(input, place));
 
 // without built-in functions like indexOf(), slice(), split(), reverse(), join(), then you need to manually find the character and build the result.
+//  const input = "Andhrapradesh";
+// const targetChar = "p";
 
-// const input = "hyderabad";
-// const place = "a";
-
-// function reverseWord(input, place) {
+// function reverseWord(input, targetChar) {
 //   let index = -1;
 
-//   // Find the position of place
+//   // Find the first occurrence of target character
 //   for (let i = 0; i < input.length; i++) {
-//     if (input[i] === place) {
+//     if (input[i] === targetChar) {
 //       index = i;
 //       break;
 //     }
 //   }
 
-//   // place not found
-//   if (index === -1) {
-//     return input;
-//   }
+//   // Target character not found
+//   if (index === -1) return "Target character not found";
 
 //   let result = "";
 
-//   // Add characters before place
-//   for (let i = 0; i < index; i++) {
+//   // Reverse from target character to the beginning
+//   for (let i = index - 1 ; i >= 0; i--) {
 //     result += input[i];
 //   }
 
-//   // Add characters from place in reverse order
-//   for (let i = input.length - 1; i >= index; i--) {
+//   // Append the remaining characters
+//   for (let i = index ; i < input.length; i++) {
 //     result += input[i];
 //   }
 
-//   return result;
+//   return {
+//     reversed_word: result,
+//     index
+//   };
 // }
 
-// console.log(reverseWord(input, place));
+// console.log(reverseWord(input, targetChar));
+

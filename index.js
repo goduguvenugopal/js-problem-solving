@@ -1,4 +1,3 @@
- 
 //1. reversed string logic and finding palindrome string
 // function reverseFunc(str){
 //     const res = str.split("").reverse().join("").toLowerCase()
@@ -515,3 +514,4 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // }
 
 // console.log(typesObj);
+
