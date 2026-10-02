@@ -351,4 +351,31 @@
 
 // console.log(FindTheMaxNumOfGroupOfConsecutive(arr, k));
 
- 
+//  Time complexity O(n)  O(1) space complexity solution
+
+// function findMaxSum(arr, k) {
+//   let sum = 0;
+
+//   // First window
+//   for (let i = 0; i < k; i++) {
+//     sum += arr[i];
+//   }
+
+//   let maxSum = sum;
+
+//   // Slide the window
+//   for (let i = k; i < arr.length; i++) {
+//     sum = sum - arr[i - k] + arr[i];    
+    
+
+//     if (sum > maxSum) {
+//       maxSum = sum;
+//     }
+//   }
+
+//   return maxSum;
+// }
+
+// const arr = [2, 1, 5, 1, 3, 2];
+
+// console.log(findMaxSum(arr, 3)); // 9
