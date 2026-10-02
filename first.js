@@ -290,7 +290,7 @@
 // }
 
 // console.log(reverseWord(input, targetChar));
- 
+
 // Return vowels and consonants,
 
 // const str = "my name is venu gopal";
@@ -315,3 +315,40 @@
 // }
 
 // console.log(separateLetters(str, vowels));
+
+// Find the maximum sum of any k consecutive elements.
+
+// // Brute force solution 
+// const arr = [2, 1, 5, 1, 3, 2];
+// const k = 3;
+
+// function FindTheMaxNumOfGroupOfConsecutive(arr, k) {
+//   if (k === 0) return k;
+//   let grouOfSum = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let res = arr.slice(i, i + k);
+
+//     if (res.length === k) {
+//       let total = 0;
+//       for (let num of res) {
+//         total += num;
+//       }
+//       grouOfSum.push(total);
+//     }
+//   }
+
+//   let maxNum = -Infinity;
+
+//   for (let num of grouOfSum) {
+//     if (num > maxNum) {
+//       maxNum = num;
+//     }
+//   }
+
+//   return maxNum;
+// }
+
+// console.log(FindTheMaxNumOfGroupOfConsecutive(arr, k));
+
+ 
