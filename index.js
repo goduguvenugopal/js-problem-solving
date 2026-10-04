@@ -396,7 +396,7 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // 34.Find missing numbers in a sequence of numbers.
 // const sequence = [1, 2, 5, 6, 7, 8, 9, 10, 11,11, 13, 14, 16, 17, 19];
 
-// function findMissingNumbers(arr) {
+// function findMissingNumbers(sequence) {
 //   const last = sequence[sequence.length - 1];
 //   const arrSet = new Set(sequence);
 // //  "Using Set reduces time complexity because Set operations like .has() work in O(1) due to the internal hash table structure.
