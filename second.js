@@ -167,18 +167,49 @@
 
 // linear search
 
-const targetNum = 5;
+// const targetNum = 111;
 
-const arr = [3, 5, 6, 2, 10, 15, 4, 1];
+// const arr = [3, 5, 6, 2, 10, 15, 4, 1];
 
-function findNumber(targetNum, arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === targetNum) {
-      return i;
+// function findNumber(targetNum, arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === targetNum) {
+//       return i;
+//     }
+//   }
+
+//   return -1;
+// }
+
+// console.log(findNumber(targetNum, arr));
+
+// find vowels and consonants
+ 
+const arr = ["a", "e", "i", "o", "u"];
+const str = "venugopal";
+
+function separateLetters(arr, str) {
+  let v = [];
+  let c = [];
+
+  for (let i = 0; i < str.length; i++) {
+    let isVowel = false;
+
+    for (let j = 0; j < arr.length; j++) {
+      if (str[i] === arr[j]) {
+        isVowel = true;
+        break;
+      }
+    }
+
+    if (isVowel) {
+      v.push(str[i]);
+    } else {
+      c.push(str[i]);
     }
   }
 
-  return -1;
+  return { v, c };
 }
 
-console.log(findNumber(targetNum, arr));
+console.log(separateLetters(arr, str));
