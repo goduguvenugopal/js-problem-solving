@@ -32,10 +32,7 @@
 
 // renderStudents();
 
-
 // what actually happens to each Promise and when the final Promise settles.
-
-
 
 //  What does Promise.all() mean?
 
@@ -72,9 +69,6 @@
 //   });
 // }
 
-
-
-
 //  Promise.all([
 //   getEmployees(),
 //   getProjects(),
@@ -87,18 +81,15 @@
 //     console.error(error);
 //   });
 
-
 //   2. Promise.allSettled()
 // Now suppose your dashboard can work even if some APIs fail.
 // You want to know:
 // "Tell me the result of EVERY Promise, whether it succeeded or failed."
 
-
 // 3. Promise.race()
 // Now things become interesting.
 // Promise.race() means:
 // "Give me the result of whichever Promise settles first."
-
 
 // const server1 = new Promise((resolve) => {
 //   setTimeout(() => {
@@ -127,15 +118,12 @@
 //     console.log(result);
 //   });
 
-
 // 4. Promise.any()
 // This one is different from race().
 // Promise.any() means:
 // "Give me the first SUCCESSFUL Promise."
 
 // This is extremely useful when you have multiple servers or fallback APIs.
-
-
 
 // const server1 = new Promise((resolve, reject) => {
 //   setTimeout(() => {
@@ -165,7 +153,6 @@
 //   }, 3000);
 // });
 
-
 // Promise.any([
 //   server1,
 //   server2,
@@ -177,3 +164,21 @@
 //   .catch((error) => {
 //     console.error(error);
 //   });
+
+// linear search
+
+const targetNum = 5;
+
+const arr = [3, 5, 6, 2, 10, 15, 4, 1];
+
+function findNumber(targetNum, arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === targetNum) {
+      return i;
+    }
+  }
+
+  return -1;
+}
+
+console.log(findNumber(targetNum, arr));
