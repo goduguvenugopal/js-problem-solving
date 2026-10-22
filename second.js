@@ -184,32 +184,66 @@
 // console.log(findNumber(targetNum, arr));
 
 // find vowels and consonants
+
+// const arr = ["a", "e", "i", "o", "u"];
+// const str = "venugopal";
+
+// function separateLetters(arr, str) {
+//   let v = [];
+//   let c = [];
+
+//   for (let i = 0; i < str.length; i++) {
+//     let isVowel = false;
+
+//     for (let j = 0; j < arr.length; j++) {
+//       if (str[i] === arr[j]) {
+//         isVowel = true;
+//         break;
+//       }
+//     }
+
+//     if (isVowel) {
+//       v.push(str[i]);
+//     } else {
+//       c.push(str[i]);
+//     }
+//   }
+
+//   return { v, c };
+// }
+
+// console.log(separateLetters(arr, str));
+
+// print prime numbers upto given input
+
  
-const arr = ["a", "e", "i", "o", "u"];
-const str = "venugopal";
+// const input = 100;
 
-function separateLetters(arr, str) {
-  let v = [];
-  let c = [];
+// // Print prime numbers up to the given input
+// function primeNumbers(input) {
+//   const primes = [];
 
-  for (let i = 0; i < str.length; i++) {
-    let isVowel = false;
+//   for (let num = 2; num <= input; num++) {
+//     let isPrime = true;
+ 
 
-    for (let j = 0; j < arr.length; j++) {
-      if (str[i] === arr[j]) {
-        isVowel = true;
-        break;
-      }
-    }
+//     for (let i = 2; i < num; i++) { 
+ 
+        
+//       if (num % i === 0) {
+//         isPrime = false; 
+//         break; 
+//       } 
+//     } 
+ 
+//     if (isPrime) {
+//       primes.push(num);
+//     }
+//   }
 
-    if (isVowel) {
-      v.push(str[i]);
-    } else {
-      c.push(str[i]);
-    }
-  }
+//   return primes;
+// }
 
-  return { v, c };
-}
+// console.log(primeNumbers(input));
 
-console.log(separateLetters(arr, str));
+// “The time complexity is Big O of n times the square root of n, because the outer loop runs n times, and the inner loop checks divisors up to the square root of each number.”
