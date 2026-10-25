@@ -227,7 +227,7 @@
 //     let isPrime = true;
  
 
-//     for (let i = 2; i < num; i++) { 
+//     for (let i = 2; i * i < num; i++) { 
  
         
 //       if (num % i === 0) {
@@ -247,3 +247,25 @@
 // console.log(primeNumbers(input));
 
 // “The time complexity is Big O of n times the square root of n, because the outer loop runs n times, and the inner loop checks divisors up to the square root of each number.”
+
+
+// Print fibonacci series up to given input 
+
+// const input = 100;
+
+// function fibonacci(input) {
+//   let first = 0;
+//   let second = 1;
+
+//   for (let i = 0; i < input; i++) {
+//     console.log(first);
+
+//     // [first, second] = [second, first + second];  
+
+//     const next = first + second
+//     first =  second
+//     second = next
+//   }
+// }
+
+// fibonacci(input);
