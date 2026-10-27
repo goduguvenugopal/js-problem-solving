@@ -1,32 +1,32 @@
-// const l = 2;
-// const a = 20;
-// const p = "ll";
+const l = 2;
+const a = 2;
+const p = "aa";
 
-// function findEqualSize(l, a, p) {
-//   const alphabets = "abcdefghijklmnopqrstuvwxyz".slice(0, a);
+function findEqualSize(l, a, p) {
+  const alphabets = "abcdefghijklmnopqrstuvwxyz".slice(0, a);
 
-//   const arr = [];
+  const arr = [];
 
-//   function generate(current) {
-//     if (current.length === l) {
-//       if (current !== p) {
-//         arr.push(current);
-//       }
-//       return
-//     }
+  function generate(current) {
+    if (current.length === l) {
+      if (current !== p) {
+        arr.push(current);
+      }
+      return
+    }
 
-//     for (let char of alphabets) {
-//       generate(current + char);
-//     }
-//   }
+    for (let char of alphabets) {
+      generate(current + char);
+    }
+  }
 
-//   generate("");
-// console.log(arr);
+  generate("");
+console.log(arr);
 
-//   return arr.length;
-// }
+  return arr.length;
+}
 
-// console.log(findEqualSize(l, a, p));
+console.log(findEqualSize(l, a, p));
 
 
 
