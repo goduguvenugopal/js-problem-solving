@@ -30,28 +30,51 @@
 
 // remove duplicates
 
-const arr = [2, 3, 4, 2, 1, 5, 3, 4, 2, 5, 6, 1, 7, 8];
+// const arr = [2, 3, 4, 2, 1, 5, 3, 4, 2, 5, 6, 1, 7, 8];
 
-function removeDup(arr) {
-  const uniArr = [];
+// function removeDup(arr) {
+//   const uniArr = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    const current = arr[i];
-    let isDuplicate = false;
+//   for (let i = 0; i < arr.length; i++) {
+//     const current = arr[i];
+//     let isDuplicate = false;
 
-    for (let j = 0; j < uniArr.length; j++) {
-      if (current === uniArr[j]) {
-        isDuplicate = true;
-        break;
-      }
-    }
+//     for (let j = 0; j < uniArr.length; j++) {
+//       if (current === uniArr[j]) {
+//         isDuplicate = true;
+//         break;
+//       }
+//     }
 
-    if (!isDuplicate) {
-      uniArr[uniArr.length] = current;
-    }
-  }
+//     if (!isDuplicate) {
+//       uniArr[uniArr.length] = current;
+//     }
+//   }
 
-  return uniArr;
-}
+//   return uniArr;
+// }
 
-console.log(removeDup(arr));
+// console.log(removeDup(arr));
+
+// find count of given target number 3 and up to given input number 35
+
+// const inputNum = 10;
+// const targetNum = 1;
+
+// function findNumCount(input, target) {
+//   let targetCounter = 0;
+
+//   for (let i = 0; i <= input; i++) {
+//     const strArr = String(i).split("");
+
+//     for (let num of strArr) {
+//       if (Number(num) === target) {
+//         targetCounter++;
+//       }
+//     }
+//   }
+
+//   return targetCounter;
+// }
+
+// console.log(findNumCount(inputNum, targetNum));
