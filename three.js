@@ -47,7 +47,7 @@ function removeDup(arr) {
     }
 
     if (!isDuplicate) {
-      uniArr.push(current);
+      uniArr[uniArr.length] = current;
     }
   }
 
