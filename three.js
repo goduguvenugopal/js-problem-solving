@@ -81,35 +81,48 @@
 
 // console.log(findNumCount(inputNum, targetNum));
 
-const inputNum = 35;
-const targetNum = 3;
+// const inputNum = 35;
+// const targetNum = 3;
 
-function findNumCount(input, target) {
-  let targetCounter = 0;
+// function findNumCount(input, target) {
+//   let targetCounter = 0;
 
-  for (let i = 0; i <= input; i++) {
-    let num = i;
+//   for (let i = 0; i <= input; i++) {
+//     let num = i;
 
-    while (num > 0) {
-      const lastDigit = num % 10;
+//     while (num > 0) {
+//       const lastDigit = num % 10;
 
-      if (lastDigit === target) {
-        targetCounter++;
-      }
+//       if (lastDigit === target) {
+//         targetCounter++;
+//       }
 
-      num = Math.floor(num / 10);
-    }
-  }
+//       num = Math.floor(num / 10);
+//     }
+//   }
 
-  return targetCounter;
-}
+//   return targetCounter;
+// }
 
-console.log(findNumCount(inputNum, targetNum)); 
-
-
+// console.log(findNumCount(inputNum, targetNum));
 
 // Complexity analysis
 // Let n be the input number.
 // Complexity	Value	Reason
 // Time	O(n log n)	Visit each number and its digits
 // Auxiliary space	O(1)	Only a few variables
+
+const num = 54678;
+
+function findDigits(num) {
+  
+  let counter = 0;
+  while (num > 0) {
+    num = Math.floor(num / 10);
+    counter++;
+  }
+
+  return counter
+}
+
+console.log(findDigits(num));
