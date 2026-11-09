@@ -112,17 +112,52 @@
 // Time	O(n log n)	Visit each number and its digits
 // Auxiliary space	O(1)	Only a few variables
 
-const num = 54678;
+// const num = 54678;
 
-function findDigits(num) {
-  
-  let counter = 0;
-  while (num > 0) {
-    num = Math.floor(num / 10);
-    counter++;
-  }
+// function findDigits(num) {
 
-  return counter
-}
+//   let counter = 0;
+//   while (num > 0) {
+//     num = Math.floor(num / 10);
+//     counter++;
+//   }
 
-console.log(findDigits(num));
+//   return counter
+// }
+
+// console.log(findDigits(num));
+
+// Find Armstrong Number
+
+// Rules:
+// - Don't convert the number into a string.
+// - Don't use array methods.
+// - Use a while loop.
+// - Use % and Math.floor().
+// - Use Math.pow() or ** for exponentiation.
+
+// output : Armstrong Number
+
+// function checkArmstrongNum(inputNum) {
+//   const originalNum = inputNum;
+//   let temp = inputNum;
+//   let digits = 0;
+
+//   while (temp > 0) {
+//     temp = Math.floor(temp / 10);
+//     digits++;
+//   }
+
+//   temp = inputNum;
+//   let totalPowSum = 0;
+
+//   while (temp > 0) {
+//     const lastNum = temp % 10;
+//     totalPowSum += lastNum ** digits;
+//     temp = Math.floor(temp / 10);
+//   }
+
+//   return totalPowSum === originalNum
+//     ? "Armstrong Number"
+//     : "Not an Armstrong Number";
+// }
