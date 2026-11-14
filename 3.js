@@ -155,9 +155,62 @@
 //     const lastNum = temp % 10;
 //     totalPowSum += lastNum ** digits;
 //     temp = Math.floor(temp / 10);
-//   }
+//   } 
 
 //   return totalPowSum === originalNum
 //     ? "Armstrong Number"
 //     : "Not an Armstrong Number";
 // }
+
+// const l = 2;
+// const a = 2;
+// const f = "aa";
+
+// function findCombinationOfCharactersLength(length, alpha, forbidden) {
+//   const alphabets = "abcdefghijklmnopqrstuvwxyz";
+//   const letters = alphabets.slice(0, alpha);
+
+//   let count = 0;
+
+//   function generatePossibleLetters(current) {
+//     // Base case
+//     if (current.length === length) {
+//       if (current !== forbidden) {
+//         count++;
+//       }
+//       return;
+//     }
+
+//     // Recursive case
+//     for (let char of letters) {
+//       generatePossibleLetters(current + char);
+//     }
+//   }
+
+//   generatePossibleLetters("");
+
+//   return count;
+// }
+
+// console.log(
+//   findCombinationOfCharactersLength(l, a, f)
+// );
+
+// function first() {
+//   console.log("1");
+//   second();
+//   console.log("6");
+// }
+
+// function second() {
+//   console.log("2");
+//   third();
+//   console.log("5");
+// }
+
+// function third() {
+//   console.log("3");
+//   console.log("4");
+// }
+
+// first();
