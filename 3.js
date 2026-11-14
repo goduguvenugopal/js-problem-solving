@@ -155,7 +155,7 @@
 //     const lastNum = temp % 10;
 //     totalPowSum += lastNum ** digits;
 //     temp = Math.floor(temp / 10);
-//   } 
+//   }
 
 //   return totalPowSum === originalNum
 //     ? "Armstrong Number"
@@ -214,3 +214,16 @@
 // }
 
 // first();
+
+// print n numbers with recursive logic here
+ function printNumbers(n) {
+  if (n === 0) {
+    return;
+  }
+
+  printNumbers(n - 1);
+
+  console.log(n);
+}
+
+printNumbers(5);
