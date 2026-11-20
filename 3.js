@@ -215,15 +215,33 @@
 
 // first();
 
+
+
+
 // print n numbers with recursive logic here
- function printNumbers(n) {
-  if (n === 0) {
-    return;
-  }
+//  function printNumbers(n) {
+//   if (n === 0) {
+//     return;
+//   }
 
-  printNumbers(n - 1);
+//   console.log(n);
+//   printNumbers(n - 1);
 
-  console.log(n);
-}
+// }
 
-printNumbers(5);
+// printNumbers(5);
+
+// **Before recursion:**
+
+// - The statement executes immediately, before the next recursive function call.
+// - Executes while the call stack grows (recursive descent).
+// - Example: Print `5, 4, 3, 2, 1`.
+
+// **After recursion:**
+
+// - The statement waits until the nested recursive function finishes.
+// - Executes when the call stack unwinds and the parent resumes.
+// - Each parent accesses its own original parameter value.
+// - Example: Print `1, 2, 3, 4, 5`.
+
+// **Remember:** Before = Going deeper. After = Coming back.
