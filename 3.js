@@ -215,9 +215,6 @@
 
 // first();
 
-
-
-
 // print n numbers with recursive logic here
 //  function printNumbers(n) {
 //   if (n === 0) {
@@ -245,3 +242,23 @@
 // - Example: Print `1, 2, 3, 4, 5`.
 
 // **Remember:** Before = Going deeper. After = Coming back.
+
+// // swap target numbers to last
+// const arr = [1, 2, 0, 4, 0, 5, 0, 4, 4, 0];
+
+// const target = 4;
+
+// function swapNumbers(arr, target) {
+//   let count = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== target) {
+//       [arr[i], arr[count]] = [arr[count], arr[i]];
+//       count++;
+//     }
+//   }
+
+//   return arr;
+// }
+
+// console.log(swapNumbers(arr, target));
