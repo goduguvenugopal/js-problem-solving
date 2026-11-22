@@ -243,22 +243,25 @@
 
 // **Remember:** Before = Going deeper. After = Coming back.
 
-// // swap target numbers to last
-// const arr = [1, 2, 0, 4, 0, 5, 0, 4, 4, 0];
+// swap target numbers to last
+const arr = [1, 2, 0, 4, 0, 5, 0, 4, 4, 0];
 
-// const target = 4;
+const target = 4;
 
-// function swapNumbers(arr, target) {
-//   let count = 0;
+function swapNumbers(arr, target) {
+  let count = 0;
 
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] !== target) {
-//       [arr[i], arr[count]] = [arr[count], arr[i]];
-//       count++;
-//     }
-//   }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== target) {
+        // using temp variablen
+      const temp = arr[i];
+      arr[i] = arr[count];
+      arr[count] = temp;
+      count++;
+    }
+  }
 
-//   return arr;
-// }
+  return arr;
+}
 
-// console.log(swapNumbers(arr, target));
+console.log(swapNumbers(arr, target));
