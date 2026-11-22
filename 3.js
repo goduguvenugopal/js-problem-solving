@@ -252,11 +252,11 @@ function swapNumbers(arr, target) {
   let count = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== target) {
-        // using temp variablen
-      const temp = arr[i];
-      arr[i] = arr[count];
-      arr[count] = temp;
+    if (arr[i] === target) {
+        // using temp variable
+     const temp = arr[count]
+      arr[count] = arr[i];
+      arr[i] = temp;
       count++;
     }
   }
