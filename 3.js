@@ -287,3 +287,48 @@
 // Complexity analysis
 // - Time Complexity: O(n²) – Two nested loops.
 // - Space Complexity: O(1) – Only a constant amount of extra space.
+
+// const stocks = [2, 8, 3, 4, 6, 1, 9, 5, 12];
+
+// function buyAndSellStock(stocks) {
+//   let maxStock = 0;
+
+//   for (let i = 0; i < stocks.length - 1; i++) {
+//     const maxNum = Math.max(...stocks.slice(i + 1));
+
+//     const current = maxNum - stocks[i];
+
+//     if (current > maxStock) maxStock = current;
+//   }
+
+//   return maxStock;
+// }
+// console.log(buyAndSellStock(stocks));
+
+
+// const stocks = [2, 8, 3, 4, 6, 1, 9, 5, 12];
+
+// function buyAndSellStock(stocks) {
+//   let minStock = Infinity;
+//   let maxProfit = 0;
+
+//   for (let i = 0; i < stocks.length; i++) {
+//     if (stocks[i] < minStock) {
+//       minStock = stocks[i];
+//     }
+
+//     const currentProfit = stocks[i] - minStock;
+
+//     if (currentProfit > maxProfit) {
+//       maxProfit = currentProfit;
+//     }
+//   }
+
+//   return maxProfit;
+// }
+
+// console.log(buyAndSellStock(stocks)); // 
+
+// Best Time to Buy and Sell Stock is the One Pass (Greedy) approach.
+
+// It reduces your time complexity from O(n²) to O(n).
