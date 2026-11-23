@@ -243,25 +243,47 @@
 
 // **Remember:** Before = Going deeper. After = Coming back.
 
-// swap target numbers to last
-const arr = [1, 2, 0, 4, 0, 5, 0, 4, 4, 0];
+// // swap target numbers to last
+// const arr = [1, 2, 0, 4, 0, 5, 0, 4, 4, 0];
 
-const target = 4;
+// const target = 4;
 
-function swapNumbers(arr, target) {
-  let count = 0;
+// function swapNumbers(arr, target) {
+//   let count = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === target) {
-        // using temp variable
-     const temp = arr[count]
-      arr[count] = arr[i];
-      arr[i] = temp;
-      count++;
-    }
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === target) {
+//         // using temp variable
+//      const temp = arr[count]
+//       arr[count] = arr[i];
+//       arr[i] = temp;
+//       count++;
+//     }
+//   }
 
-  return arr;
-}
+//   return arr;
+// }
 
-console.log(swapNumbers(arr, target));
+// console.log(swapNumbers(arr, target));
+
+// Best Time to Buy and Sell Stock
+
+// const stocks = [2, 8, 3, 4, 6, 1, 9, 5, 12];
+
+// function buyAndSellStock(stocks) {
+//   let maxStock = 0;
+
+//   for (let i = 0; i < stocks.length; i++) {
+//     for (let j = i + 1; j < stocks.length; j++) {
+//       const value = stocks[j] - stocks[i];
+//       if (value > maxStock) maxStock = value;
+//     }
+//   }
+
+//   return maxStock
+// }
+// console.log(buyAndSellStock(stocks));
+
+// Complexity analysis
+// - Time Complexity: O(n²) – Two nested loops.
+// - Space Complexity: O(1) – Only a constant amount of extra space.
